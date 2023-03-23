@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salarios app</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Salarios</h1>
+        <center>
+            <div class="card" style="width: 18rem;">
+                <div id="completo" class="card-body">
+                    <form id="formulario">
+                        <div>
+                            <label for="categoria">Categoría de Empleado:</label>
+                            <select id="categoria" name="categoria">
+                                <option value="1">Categoría 1</option>
+                                <option value="2">Categoría 2</option>
+                                <option value="3">Categoría 3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="horas">Horas Trabajadas:</label>
+                            <input type="number" id="horas" name="horas" min="1" max="168" required>
+                        </div>
+                        <div>
+                            <button type="submit">Calcular Salario</button>
+                        </div>
+                    </form>
+                    <p>Salario</p>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </center>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
